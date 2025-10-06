@@ -11,7 +11,7 @@ test('Finacplus Assignment - DemoQA Login', async ({ page }) => {
     await page.getByPlaceholder('UserName').fill('gkarthik2233');
     await page.getByPlaceholder('Password').fill('Gkarthik@2233');
     await page.getByRole('button', { name: 'Login' }).click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(20000);
 
     const userval = await page.locator('#userName-value');
     await expect(userval).toBeVisible();
